@@ -34,7 +34,7 @@ Before running the project, make sure you have the following installed on your m
         - cd ../server
         - npm install
 4. create a new connection to the mongoDB compass on localhost:27017, than create a new Database named ProductsCatalog,
-   then import the three included collection that can be found in the repo main folder /mongoCollections
+   then import the three included collection that can be found in the repo main folder /MongoCollections
 
 
 ## Running the Project
