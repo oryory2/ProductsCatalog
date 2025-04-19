@@ -29,18 +29,18 @@ Before running the project, make sure you have the following installed on your m
 2. Make sure you have all the neccassary 
 3. Install dependencies for both frontend and backend:
    - inside the repo main folder, open cmd and run:
-        cd client
-        npm install
-        cd ../server
-        npm install
+        - cd client
+        - npm install
+        - cd ../server
+        - npm install
 
 
 ## Running the Project
 - inside the repo main folder, open cmd and run:
-    cd client
-    npm run dev
-    cd ../server
-    npm start
+    - cd client
+    - npm run dev
+    - cd ../server
+    - npm start
 
 
 After running, the site will open automatically in your browser.
