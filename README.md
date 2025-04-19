@@ -20,10 +20,10 @@ Before running the project, make sure you have the following installed on your m
 - Node.js 
 - JavaScript/TypeScript support
 - Visual Studio Code
-- MongoDB Compass - installed and running on localhost:27017
+- MongoDB Compass  running on localhost:27017
 - Git for version control
 
-## Running instructions
+## Installing instructions
 
 1. Clone the repository
 2. Make sure you have all the neccassary 
@@ -33,6 +33,8 @@ Before running the project, make sure you have the following installed on your m
         - npm install
         - cd ../server
         - npm install
+4. create a new connection to the mongoDB compass on localhost:27017, than create a new Database named ProductsCatalog,
+   then import the three included collection that can be found in the repo main folder /mongoCollections
 
 
 ## Running the Project
@@ -46,6 +48,10 @@ Before running the project, make sure you have the following installed on your m
 After running, the site will open automatically in your browser.
 If it doesn't, you can manually visit:
 http://localhost:5173/register
+- you can use my default user that is already registered:
+   - username: oryory2
+   - password: abcdefg
+- or you can add a new user :)
 
 
 
