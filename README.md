@@ -43,7 +43,7 @@ Before running the project, make sure you have the following installed on your m
     npm start
 
 
-# After running, the site will open automatically in your browser.
+After running, the site will open automatically in your browser.
 If it doesn't, you can manually visit:
 http://localhost:5173/register
 
