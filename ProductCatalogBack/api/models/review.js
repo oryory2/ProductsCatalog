@@ -10,4 +10,4 @@ const reviewSchema = mongoose.Schema({
 });
 
 
-module.exports = mongoose.model("Review", reviewSchema, "reviews");
+module.exports = mongoose.model("Review", reviewSchema, "Reviews");
