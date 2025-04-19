@@ -26,14 +26,13 @@ Before running the project, make sure you have the following installed on your m
 ## Installing instructions
 
 1. Clone the repository
-2. Make sure you have all the neccassary 
-3. Install dependencies for both frontend and backend:
+2. Install dependencies for both frontend and backend:
    - inside the repo main folder, open cmd and run:
-        - cd client
+        - cd ProductCatalogBack
         - npm install
-        - cd ../server
+        - cd ../‏‏ProductCatalogFront
         - npm install
-4. create a new connection to the mongoDB compass on localhost:27017, than create a new Database named ProductsCatalog,
+3. create a new connection to the mongoDB compass on localhost:27017, than create a new Database named ProductsCatalog,
    then import the three included collection that can be found in the repo main folder /MongoCollections:
    - Products
    - Reviews
@@ -42,10 +41,10 @@ Before running the project, make sure you have the following installed on your m
 
 ## Running the Project
 - inside the repo main folder, open cmd and run:
-    - cd client
-    - npm run dev
-    - cd ../server
+    - cd ProductCatalogBack
     - npm start
+    - cd ../‏‏ProductCatalogFront
+    - npm run dev
 
 
 After running, the site will open automatically in your browser.
