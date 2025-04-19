@@ -20,7 +20,7 @@ Before running the project, make sure you have the following installed on your m
 - Node.js 
 - JavaScript/TypeScript support
 - Visual Studio Code
-- MongoDB Compass (or any other MongoDB client)
+- MongoDB Compass - installed and running on localhost:27017
 - Git for version control
 
 ## Running instructions
