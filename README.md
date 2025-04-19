@@ -1,4 +1,4 @@
-## Fullstack ProductsCatalog aPPlication
+## Fullstack ProductsCatalog Application
 
 This is a fullstack **Product Catalog** web application built with a Typescript/React frontend and a backend using Node.js.  
 It allows users to register/login, browse products, view detailed information, read and add/update/delete reviews, and interact through a responsive and user-friendly interface.
