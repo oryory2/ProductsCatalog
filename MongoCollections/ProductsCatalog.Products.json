@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "661dafe33f4a5e4d1a92c111"
+  },
+  "price": 700,
+  "description": "Noise-cancelling over-ear headphones with Bluetooth.",
+  "image": "https://www.istoreil.co.il/media/catalog/product/a/i/airpods_pro_2nd_gen_with_usb-c_pdp_image_position-1__en-us.jpg",
+  "rating": 5,
+  "reviews": [
+    {
+      "$oid": "6803e51b92944a3b5e17de6d"
+    }
+  ],
+  "productName": "Apple Airpods Pro",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "661db1f13f4a5e4d1a92c112"
+  },
+  "price": 450,
+  "description": "Wireless controller for PlayStation 5 with haptic feedback and adaptive triggers.",
+  "image": "https://cellfi.co.il/wp-content/uploads/2023/11/white.jpg",
+  "rating": 0,
+  "reviews": [],
+  "productName": "Sony DualSense Controller",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661db27c3f4a5e4d1a92c113"
+  },
+  "price": 1299,
+  "description": "Modern ergonomic office chair with lumbar support and breathable mesh back.",
+  "image": "https://content.etilize.com/900/1012680155.jpg",
+  "rating": 0,
+  "reviews": [],
+  "productName": "ErgoMesh Office Chair",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661db31c3f4a5e4d1a92c114"
+  },
+  "price": 399,
+  "description": "Lightweight running shoes with breathable fabric and cushioned sole.",
+  "image": "https://media.shoesonline.co.il/2023/05/men-Nike-Pegasus-40__DV3853-400-2-500x500.jpg",
+  "rating": 3,
+  "reviews": [
+    {
+      "$oid": "6803ea7592944a3b5e17defe"
+    }
+  ],
+  "productName": "Nike Air Zoom Pegasus 40",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "661db1f13f4a5e4d1a92c117"
+  },
+  "price": 999,
+  "description": "Flagship smartphone with OLED display, triple-camera system, and 5G support.",
+  "image": "https://d2d22nphq0yz8t.cloudfront.net/6cbcadef-96e0-49e9-b3bd-9921afe362db/www.shekem-electric.co.il/media/catalog/product/i/p/iphone_13_blue_pdp_image_position-1a__wwen_5.jpg",
+  "rating": 0,
+  "reviews": [],
+  "productName": "Apple iPhone 13",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661db8d13f4a5e4d1a92c124"
+  },
+  "price": 1250,
+  "description": "Louis Vuitton's signature fragrance with floral and woody notes.",
+  "image": "https://fimgs.net/mdimg/perfume/375x500.48305.jpg",
+  "rating": 3,
+  "reviews": [
+    {
+      "$oid": "6803ea5a92944a3b5e17def3"
+    }
+  ],
+  "productName": "Louis Vuitton Le Jour Se Lève Perfume",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "661dbd543f4a5e4d1a92c129"
+  },
+  "price": 450,
+  "description": "Nike Air Zoom Pegasus 39, comfortable and lightweight running shoes with responsive cushioning.",
+  "image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11802220/large/39358020d07af605cfb6378e28ddb81c.webp",
+  "rating": 4,
+  "reviews": [
+    {
+      "$oid": "6803e9b992944a3b5e17dec9"
+    }
+  ],
+  "productName": "Nike Air Zoom Pegasus 39",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "661dc3f33f4a5e4d1a92c135"
+  },
+  "price": 999,
+  "description": "The Nox AT10 10K Tapia, designed in collaboration with top player Agustín Tapia.",
+  "image": "https://www.padelreference.com/storage/12765/mLMmWigQnt2xkgoTCWgYWQICIRr4Sb-metaUmFxdWV0dGUtZGUtcGFkZWwtTm94LUFUMTAtR2VuaXVzLTE4Sy1ieS1BZ3VzdGluLVRhcGlhLTIwMjUtM3FfMTIwMHgud.webp",
+  "rating": 4,
+  "reviews": [
+    {
+      "$oid": "6803ea4392944a3b5e17dee8"
+    }
+  ],
+  "productName": "Nox AT10 10K Tapia",
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "661dbf6c3f4a5e4d1a92c131"
+  },
+  "price": 420,
+  "description": "Adidas Ultraboost 22, high-performance running shoes with Boost cushioning for energy return.",
+  "image": "https://cdn-images.farfetch-contents.com/19/41/92/92/19419292_42685107_1000.jpg",
+  "rating": 0,
+  "reviews": [],
+  "productName": "Adidas Ultraboost 22",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661dbb713f4a5e4d1a92c127"
+  },
+  "price": 1250,
+  "description": "Louis Vuitton Imagination, an elegant fragrance with citrus and floral notes.",
+  "image": "https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-imagination--LP0221_PM1_Side%20view.jpg?impolicy=bgcolor&bgcolor=%23f8f8f8",
+  "rating": 5,
+  "reviews": [
+    {
+      "$oid": "6803ea2f92944a3b5e17dedd"
+    }
+  ],
+  "productName": "Louis Vuitton Imagination Perfume",
+  "__v": 1
+}]
