@@ -10,6 +10,7 @@ import { setToken, setUser } from '../helpers/helpers';
 import Link from '../components/Link';
 import Loader from '../components/Loader';
 import Text from '../components/Text';
+import Label from '../components/Label';
 
 // Component that displays the Register/Login page according to the current url
 const CommonPage = () => {
@@ -83,13 +84,15 @@ const CommonPage = () => {
         <div className="common-page">
             <Text text={`${isRegister ? "Register" : "Login"} Page`} textColor={TextColor.White} className='title'/>
             <form className="form-area" onSubmit={(event) => {handleSubmit(); event.preventDefault();}}>
-                <div className="input-label">
-                    <Text text={"username: "} textColor={TextColor.White} className='label'/>
-                    <Input text={username} handleChange={(username: string) => {setUsername(username); setUsernameErr(false);}} error={usernameErr}/>
-                </div>
-                <div className="input-label">
-                    <Text text={"password: "} textColor={TextColor.White} className='label'/>
-                    <Input text={password} handleChange={(username: string) => {setPassword(username); setPasswordErr(false);}} error={passwordErr}/>
+                <div className="input-label-area">
+                    <div className="input-label">
+                        <Label text={"username: "} htmlFor={"username"}/>
+                        <Input text={username} handleChange={(username: string) => {setUsername(username); setUsernameErr(false);}} error={usernameErr} id={"username"}/>
+                    </div>
+                    <div className="input-label">
+                        <Label text={"password: "} htmlFor={"password"}/>
+                        <Input text={password} handleChange={(username: string) => {setPassword(username); setPasswordErr(false);}} error={passwordErr} id={"password"}/>
+                    </div>
                 </div>
                 <Button text={`${isRegister ? "Register" : "Login"}`} handleClick={()=>{}}/>
                 <Text text={"Enter a valid username and password (not empty or just spaces)"} textColor={TextColor.White} className='label'/>

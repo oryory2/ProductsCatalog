@@ -14,11 +14,11 @@ const Stars = ({rating, handleChange, error}: Props) => {
       return [...Array(5)].map((_, index: number) => {
         const fillPercentage = Math.min(Math.max(rating - index, 0), 1) * 100;
         return (
-          <span
+          <div
             key={index}
             className={`star ${handleChange && "clickable"} ${error && "error"}`}
             style={{ '--fill': `${fillPercentage}%` } as React.CSSProperties}
-            onClick={() => handleChange?.(index + 1)}>★</span>
+            onClick={() => handleChange?.(index + 1)}>★</div>
           )})
   }, [rating, error]);
 

@@ -5,6 +5,7 @@ html, body {
     padding: 0;
     height: 100%;
     overflow-x: hidden;
+    font-family: cursive;
 }
 
 .common-page{
@@ -23,27 +24,23 @@ html, body {
 .title{
     font-size: 500%;
     font-weight: 500;
-    font-family:cursive;
     color: white;
 }
 
 .label{
   font-size: 200%;
   font-weight: 500;
-  font-family:cursive;
 }
 
 .tile-text{
   font-size: 25px;
   font-weight: bold;
-  font-family:cursive;
-  color: black
+  color: black;
 }
 
 .error-text{
   font-size: 150%;
   font-weight: 500;
-  font-family:cursive;
 }
 
 .error-text::before{
@@ -77,7 +74,6 @@ html, body {
     align-items: center;
     width: 90%;
     height: 100%;
-    border: 2px solid white;
     border-radius: 8px;
     padding: 10px;
     color: white;
@@ -86,11 +82,22 @@ html, body {
     gap: 10px;
 }
 
+.input-label-area{
+  max-width: 450px;
+}
+
 .input-label{
     display: flex;
-    align-items: center;
-    gap: 10px;
     margin-bottom: 10px;
+    gap: 10px;
+}
+
+.label-form{
+  font-size: 200%;
+  font-weight: 500;
+  color: white;
+  width: 150px;
+  flex-shrink: 0;
 }
 
 .review-form .input-label{
@@ -104,10 +111,10 @@ html, body {
     border: 2px solid black;
     border-radius: 8px;
     padding: 10px;
-    font-family:cursive;
     width: 100%;
     max-width: 250px;
     font-size: 20px;
+    flex: 1;
 }
 
 .input.error{
@@ -127,7 +134,6 @@ html, body {
   border-radius: 8px;
   padding: 10px;
   margin-top: 5%;
-  font-family:cursive;
   width: 250px;
   resize: none;
 }
@@ -170,8 +176,9 @@ html, body {
     padding: 10px;
     margin-top: 25px;
     margin-bottom: 25px;
-    font-family:cursive;
     font-size: 20px;
+    font-family: cursive;
+    min-width: 100px;
 }
 
 .button:hover{
@@ -247,7 +254,6 @@ html, body {
 .link{
     font-size: 200%;
     font-weight: 500;
-    font-family:cursive;
     font-style: italic;
     color:darkslategray;
 }
@@ -293,7 +299,6 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    justify-content: center;
     align-items: center;
     height: 100%;
     background-color: white;
@@ -305,10 +310,9 @@ html, body {
   }
 
   .product-tile.hover:hover{
-    opacity: 0.7;
     cursor: pointer;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 5);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
   }
 
   .product-tile.blur{
@@ -321,6 +325,10 @@ html, body {
     opacity: 0.5;
   }
 
+  .product-tile-title{
+    height: 100px;
+  }
+
   .stars-container-tile{
     display: flex;
     flex-direction: row;
@@ -329,8 +337,8 @@ html, body {
   }
   
   .product-image{
-    height: 30%;
-    width: 50%;
+    height: 180px;
+    width: 180px;
     margin-top: 2%;
     margin-bottom: 2%;
   }
@@ -360,7 +368,8 @@ html, body {
     margin-top: 1%;
     margin-bottom: 3%;
     max-height: 50%;
-    max-width: 50%;
+    max-width: 900px;
+    padding: 0 20px;
   }
 
   /* ReviewsList */
