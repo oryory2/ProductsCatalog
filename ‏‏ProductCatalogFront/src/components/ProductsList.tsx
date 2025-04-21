@@ -45,12 +45,12 @@ const ProductsList = ({isLoggedIn}: Props) => {
     return isLoading
     ? <Loader/>
     : products.length !== 0 
-    ? <div className="products-list">
+    ? <ul className="products-list">
         {products}
         <Modal modalFlag={modalFlag} handleOk={() => {setModalFlag(false); navigate(routes.loginPage);}} handleClose={() => {setModalFlag(false);}} showOk={true}>
             <Text text={"In order to view products, you must be logged in :("} textColor={TextColor.Teal} className="label"/>
         </Modal>
-      </div>
+      </ul>
     : <Text text={"There are no products in the system.."} textColor={TextColor.White} className="label"/>
 
 

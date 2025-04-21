@@ -9,9 +9,9 @@ type Props = {
 // Component that displays a text (Title/Label/Tile-text)
 const Text = ({text, textColor, className}: Props) => {
     return (
-    <span className={`text ${className && className} ${textColor}`}>
+    <div className={`text ${className && className} ${textColor}`}>
         {text}
-    </span>
+    </div>
 )
 };
 

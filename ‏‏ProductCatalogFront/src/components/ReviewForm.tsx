@@ -5,6 +5,7 @@ import Input from "./Input";
 import Text from "./Text";
 import TextBox from "./TextBox";
 import Stars from "./Stars";
+import Label from "./Label";
 
 
 
@@ -49,30 +50,32 @@ const ReviewForm = ({formRef, initDescription, initRating}: Props) => {
 
     return(
         <div className="review-form">
-                <div className="input-label">
-                    <Text text={"username: "} textColor={TextColor.White} className='label'/>
-                    <Input text={username} isDisabled={true}/>
-                </div>
+            <div className="input-label">
+                <Label text={"username: "} htmlFor={"username"}/>
+                <Input text={username} isDisabled={true} id={"username"}/>
+            </div>
 
-                <div className="input-label">
-                    <Text text={"description: "} textColor={TextColor.White} className='label'/>
-                    <TextBox 
+            <div className="input-label">
+                <Label text={"description: "} htmlFor={"description"}/>
+                <TextBox 
                     text={description} 
                     handleChange={(text: string)=>{setDescription(text); setDescriptionErr(false);}} 
                     className={"text-box"} 
-                    error={descriptionErr}/>
-                </div> 
+                    error={descriptionErr}
+                    id={"description"}
+                />
+            </div> 
 
-                <div className="input-label">
-                    <Text text={"rating: "} textColor={TextColor.White} className='label'/>
-                    <div className="dynamic-stars-container">
-                        <Stars rating={rating} handleChange={(rating: number) => {setRating(rating); setRatingErr(false);}} error={ratingErr}/>
-                    </div>
+            <div className="input-label">
+                <Text text={"rating: "} textColor={TextColor.White} className='label'/>
+                <div className="dynamic-stars-container">
+                    <Stars rating={rating} handleChange={(rating: number) => {setRating(rating); setRatingErr(false);}} error={ratingErr}/>
                 </div>
-                <div className="error-container">
-                    {descriptionErr && <Text text={"You must fill in the description field"} textColor={TextColor.Error} className="error-text"/>}
-                    {ratingErr && <Text text={"You must pick a rating"} textColor={TextColor.Error} className="error-text"/>}
-                </div>
+            </div>
+            <div className="error-container">
+                {descriptionErr && <Text text={"You must fill in the description field"} textColor={TextColor.Error} className="error-text"/>}
+                {ratingErr && <Text text={"You must pick a rating"} textColor={TextColor.Error} className="error-text"/>}
+            </div>
         </div>
     )
 };
