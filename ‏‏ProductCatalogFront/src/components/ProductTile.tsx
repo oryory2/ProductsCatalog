@@ -24,7 +24,7 @@ const ProductTile = ({product, isLoggedIn = true, handleClick, children}: Props)
                 <Stars rating={product?.rating}/>
                 <Text text={`${product?.rating === 0 ? "" : `(${product?.rating.toString().substring(0, 5)})`}`} textColor={TextColor.Black} className="tile-text"/>
             </div>
-            <Text text={`${product.reviews.length !== 0 ? product.reviews.length + " reviews" : "No Reviews"}`} textColor={TextColor.Black} className="tile-text"/>
+            <Text text={`${product?.reviews?.length !== 0 ? product?.reviews?.length + " reviews" : "No Reviews"}`} textColor={TextColor.Black} className="tile-text"/>
             <div className="description-tile">
                 <Text text={`${product?.description}`} textColor={TextColor.Black} className="tile-text"/>
             </div>

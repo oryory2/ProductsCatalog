@@ -8,7 +8,7 @@ import ReviewsList from "../components/ReviewsList";
 import Text from "../components/Text";
 import { TextColor } from "../helpers/enums";
 import Modal from "../components/Modal";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ReviewForm from "../components/ReviewForm";
 import { useAddReviewMutation, useDeleteReviewMutation, useUpdateReviewMutation } from '../api/review';
 import { useLazyGetProductQuery } from "../api/products";
@@ -32,8 +32,15 @@ const ProductPage = () => {
     const [modalFlag, setModalFlag] = useState<boolean>(false);
     const [modalState, setModalState] = useState<string>("addReview");
     const formRef = useRef<any>(null);
-    
 
+
+    // validate existing token/product
+    useEffect(() => {
+        const token = getToken();
+        if(!token || !product)
+            navigate(routes.errorPage);
+    }, [product]);
+    
     // function that handles the add review process
     const handleAddReview = async () => {
         const review = formRef.current?.getReviewDetails();
