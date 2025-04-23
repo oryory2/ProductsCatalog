@@ -15,7 +15,9 @@ const  App = () => {
         <Route path={routes.errorPage} Component={ErrorPage}/>
         <Route path={routes.productPage} Component={ProductPage}/>
         <Route path={routes.productsPage} Component={ProductsPage}/>
-        <Route path={routes.commonPage} Component={CommonPage}/>
+        <Route path={routes.loginPage} Component={CommonPage}/>
+        <Route path={routes.registerPage} Component={CommonPage}/>
+        <Route path="*" Component={ErrorPage} />
       </Routes>
     </Router>
   )
