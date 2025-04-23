@@ -1,9 +1,9 @@
 import Input from '../components/Input';
 import Button from '../components/Button';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from '../components/Modal';
 import { HttpStatus, TextColor } from '../helpers/enums';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { routes } from '../helpers/consts';
 import { useSignupMutation, useLoginMutation } from '../api/users';
 import { setToken, setUser } from '../helpers/helpers';
@@ -15,8 +15,13 @@ import Label from '../components/Label';
 // Component that displays the Register/Login page according to the current url
 const CommonPage = () => {
 
-    const { pageType } = useParams();
-    const isRegister = pageType === "register";
+    const [isRegister, setIsRegister] = useState<boolean>();
+
+    useEffect(() => {
+        const currPage: string = window.location.pathname.split('/')[1];
+        setIsRegister(currPage === "register")
+    }, []);
+    
     
     const [username, setUsername] = useState<string>("");
     const [usernameErr, setUsernameErr] = useState<boolean>(false);
