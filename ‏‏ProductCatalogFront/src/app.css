@@ -5,7 +5,7 @@ html, body {
     padding: 0;
     height: 100%;
     overflow-x: hidden;
-    font-family: cursive;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .common-page{
@@ -357,7 +357,6 @@ html, body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
-    justify-content: center;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;

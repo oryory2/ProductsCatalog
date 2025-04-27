@@ -3,7 +3,7 @@ import Button from '../components/Button';
 import { useEffect, useState } from 'react';
 import Modal from '../components/Modal';
 import { HttpStatus, TextColor } from '../helpers/enums';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { routes } from '../helpers/consts';
 import { useSignupMutation, useLoginMutation } from '../api/users';
 import { setToken, setUser } from '../helpers/helpers';
@@ -16,11 +16,12 @@ import Label from '../components/Label';
 const CommonPage = () => {
 
     const [isRegister, setIsRegister] = useState<boolean>();
+    const location = useLocation();
 
-    useEffect(() => {
-        const currPage: string = window.location.pathname.split('/')[1];
-        setIsRegister(currPage === "register")
-    }, []);
+useEffect(() => {
+  const currPage: string = location.pathname.split('/')[1];
+  setIsRegister(currPage === "register");
+}, [location.pathname]);
     
     
     const [username, setUsername] = useState<string>("");

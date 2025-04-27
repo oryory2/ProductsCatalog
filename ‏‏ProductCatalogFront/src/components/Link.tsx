@@ -7,7 +7,7 @@ type Props = {
 };
 
 // Component that displays a link
-const Link = ({text, route, handleClick}: Props) => {
+const Link = ({text, route, handleClick}: Props) => {    
 
     const navigate = useNavigate();
     return(
